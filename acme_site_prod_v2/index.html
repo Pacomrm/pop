@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Acme Demo Website</title>
+        <meta name="description" content="Acme Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Michael Rodriguez">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="css/photoswipe.css">
+        <link rel="stylesheet" href="css/default-skin/default-skin.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    </head>
+    <body role="document">
+        <div class="hidden">
+            <script type="text/javascript">
+            <!--//--><![CDATA[//><!--
+            var images = new Array()
+            function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+            }
+            }
+            preload(
+            "assets/img/picture1.jpg",
+            "assets/img/picture2.jpg",
+            "assets/img/picture3.jpg",
+            "assets/img/picture4.jpg",
+            "assets/img/picture5.jpg",
+            "assets/img/picture6.jpg",
+            "assets/img/picture7.jpg",
+            "assets/img/picture8.jpg",
+            "assets/img/picture9.jpg",
+            "assets/img/member1.jpg",
+            "assets/img/member2.jpg",
+            "assets/img/member3.jpg",
+            "assets/img/hero-header.jpg",
+            "assets/img/hero-mobile.jpg",
+            "assets/ico/menu-icon.svg",
+            )
+            //--><!]]>
+            </script>
+        </div>
+        <header role="banner" id="myHeader">
+            <div class="navBar">
+                <div class="navBar__Link navBar__Link-brand">
+                    <h2><a href="#" role="link">ACME</a></h2>
+                </div>
+                <div class="navBar__Link navBar__Link-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="navBar__Items navBar__Items--right">
+                    <div class="navBar__Link mobileLink">
+                        <a href="#" class="navBar__Link" id="galleryBtn" role="link">GALLERY</a>
+                    </div>
+                    <div class="navbar__Link mobileLink">
+                        <a href="#" class="navBar__Link" id="testimonialBtn" role="link">TESTIMONIALS</a>
+                    </div>
+                    <div class="navbar__Link mobileLink">
+                        <a href="#" class="navBar__Link" id="teamBtn" role="link">TEAM</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main role="main">
+            <section class="hero">
+                <div class="heroImg"></div>
+                <div class="heroText">
+                    <h1 role="heading">WE ARE ACME</h1>
+                    <p>Serving you since 1996</p>
+                </div>
+            </section>
+            <gallery id="gallerySection">
+                <h1 class="contentTitle" role="heading">GALLERY</h1>
+                <p class="contentSubtitle">This is our portfolio, take a look</p>
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <div class="row">
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for Lenovo" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture1.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture1.jpg" alt="acme project lenovo">
+                                </a>
+                                <figcaption>Lenovo</figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for Mac Donalds" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture2.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture2.jpg" alt="acme project mac donalds">
+                                </a>
+                                <figcaption>Mac Donalds</figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for Lens Crafters" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture3.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture3.jpg" alt="acme project lens crafters">
+                                </a>
+                                <figcaption>Lens Crafters</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for Ray Ban" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture4.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture4.jpg" alt="acme project ray ban">
+                                </a>
+                                <figcaption>Ray Ban</figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for Nike" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture5.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture5.jpg" alt="acme project nike">
+                                </a>
+                                <figcaption>Nike</figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for BBT" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture6.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture6.jpg" alt="acme project bbt">
+                                </a>
+                                <figcaption>BBT</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project UPS" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture7.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture7.jpg" alt="acme project ups">
+                                </a>
+                                <figcaption>UPS</figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for iRobot" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture8.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture8.jpg" alt="acme project irobot">
+                                </a>
+                                <figcaption>iRobot</figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure role="img" aria-labelledby="Project for EASports" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="assets/img/picture9.jpg" data-size="540x360" data-size="540x360">
+                                    <img src="assets/img/picture9.jpg" alt="acme project ea sports">
+                                </a>
+                                <figcaption>EA Sports</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </gallery>
+            <section id="testimonialSection" class="testimonials">
+                <h1 class="contentTitle" role="heading">TESTIMONIALS</h1>
+                <p class="contentSubtitle">We are the company of the future, let's talk</p>
+                <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas eget iaculis.</p>
+                <h4>Luis Rodriguez</h4>
+                <h5><time datetime="2019-24-01">January 24</time></h5>
+                <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas eget iaculis.</p>
+                <h4>Luis Rodriguez</h4>
+                <h5><time datetime="2019-24-01">January 24</time></h5>
+                <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas eget iaculis.</p>
+                <h4>Luis Rodriguez</h4>
+                <h5><time datetime="2019-24-01">January 24</time></h5>
+            </section>
+            <section id="teamSection">
+                <h1 class="contentTitle" role="heading">TEAM</h1>
+                <p class="contentSubtitle">With more than 25 years of experience in digital advertising, you can trust in us.</p>
+                <div class="row">
+                    <div class="column">
+                        <img src="assets/img/member1.jpg" alt="team member Martin" role="img">
+                        <div class="team-title">
+                            <h5>Martin Smith</h5>
+                            <span>Founder &amp; Ceo</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="assets/img/member2.jpg" alt="team member Franklin" role="img">
+                        <div class="team-title">
+                            <h5>Franklin Harbet</h5>
+                            <span>HR Manager</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="assets/img/member3.jpg"role="img" alt="team member Linda">
+                        <div class="team-title">
+                            <h5>Kyle Anderson</h5>
+                            <span>Marketing Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p> © Acme Demo Website</p>
+        </footer>
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <a id="arrowUp"> <span class="fas fa-arrow-circle-up fa-2x arrow"></span></a>
+    <script src="src/photoswipe.min.js"></script>
+    <script src="src/photoswipe-ui-default.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

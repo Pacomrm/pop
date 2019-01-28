@@ -1,0 +1,499 @@
+
+/*-------------------------------*/
+/* Acme Demo Website */
+/* Autor: Michael Rodriguez Marin*/
+/* Version: 2.0*/
+/* Date: 28/01/19*/
+/*-------------------------------*/
+*{
+    box-sizing : border-box;
+
+    margin     : 0;
+    padding    : 0;
+}
+
+html {
+    height      : 100%;
+
+    color       : #fff;
+    line-height : 1.4;
+}
+
+body{
+    height      : 100%;
+
+    font-family : Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    color       : #000;
+}
+
+ul, nav{
+    list-style : none;
+}
+
+a{
+    cursor          : pointer;
+    opacity         : 0.9;
+    color           : inherit;
+    text-decoration : none;
+}
+
+a:hover{
+    opacity : 1;
+}
+
+a.btn{
+    background-color : #2196F3;
+    font-weight      : 800;
+    color            : #fff;
+    text-align       : center;
+    text-transform   : uppercase;
+    border-radius    : 4px;
+}
+
+hr{
+    height           : 2px;
+    width            : 150px;
+    margin-bottom    : 80px;
+
+    background-color : #2196F3;
+    border           : 0;
+}
+
+section{
+    display        : flex;
+
+    padding        : 2vh 5vh;
+
+    flex-direction : column;
+    align-items    : center;
+}
+
+.navBar {
+    display          : flex;
+
+    height           : auto;
+    width            : 100%;
+    max-width        : 1024px;
+    margin           : 0 auto;
+    padding          : 4vh 4vh 3vh;
+
+    background-color : #fff;
+    color            : #000;
+}
+
+.navBar__Link {
+    max-width     : 1024px;
+    padding-right : 2vh;
+}
+
+.navBar__Items {
+    display : flex;
+}
+
+.navBar__Items--right {
+    margin-left : auto;
+}
+
+.navBar__Link-toggle {
+    display : none;
+}
+
+/*---------------
+    MEDIA QUERIES
+-----------------*/
+@media only screen and (max-width: 768px) {
+    .navBar__Items,
+
+    .navBar {
+        flex-direction : column;
+    }
+
+    .navBar__Items {
+        display : none;
+    }
+
+    .navBar__Items--right {
+        margin-left : 0;
+    }
+
+    .navBar__ToggleShow {
+        display       : flex;
+
+        margin        : 4vh 0 0 0;
+        padding-right : 2vh;
+
+        border-top    : 1px solid #9e9e9e;
+    }
+
+    .navBar__ToggleShow .mobileLink{
+        margin : 1vh 0 3vh 0;
+    }
+
+    .navBar__Link-toggle {
+        position   : absolute;
+        display    : initial;
+
+        cursor     : pointer;
+
+        align-self : flex-end;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .navBar__Items {
+        display     : flex;
+        align-items : center;
+    }
+
+    .column {
+        min-width : 33%;
+        flex      : 33%;
+    }
+
+    .contentTitle:after{
+        width : 11vh;
+    }
+
+    #teamSection .contentTitle:after{
+        width : 5vh;
+    }
+
+    .row {
+        padding : 0;
+    }
+
+    #logoWrapper{
+        float   : left;
+        padding : 0 0 0 0;
+    }
+
+    #teamSection .column{
+        max-height : 100%;
+    }
+
+    #gallerySection{
+        padding : 0 5vh 0;
+    }
+}
+
+.team-title{
+    position       : static;
+    display        : inline-block;
+
+    width          : 100%;
+    padding        : 20px 0;
+
+    letter-spacing : 2px;
+    text-align     : center;
+}
+
+section h3.title{
+    margin-bottom  : 35px;
+
+    font           : bold 32px 'Lato', sans-serif;
+    color          : #414a4f;
+    text-align     : center;
+    text-transform : capitalize;
+}
+
+section p{
+    max-width     : 800px;
+    margin-bottom : 35px;
+    padding       : 0 20px;
+
+    line-height   : 2;
+    text-align    : center;
+}
+
+ul.grid{
+    display         : flex;
+
+    width           : 100%;
+
+    flex-wrap       : wrap;
+    justify-content : center;
+}
+
+/*-------------
+    HEADER
+-------------*/
+#topNavFlag{
+    display : none;
+}
+
+.fixedTopNav {
+    position : fixed;
+    top      : 0;
+
+    width    : 100%;
+
+    }*/
+}
+
+.fixedTopNav + main{
+    padding-top : 4vh;
+}
+
+/*----------------
+    HERO
+----------------*/
+.heroText{
+    height           : auto;
+    width            : auto;
+    max-width        : 100%;
+    margin           : 0 auto;
+    padding          : 1.5vh;
+
+    background-color : #333;
+    color            : #fff;
+    text-align       : center;
+    white-space      : nowrap;
+
+    flex-wrap        : wrap;
+    align-items      : center;
+    align-self       : center;
+}
+
+.heroText h1{
+    margin      : 0 auto;
+
+    font-size   : 3.5vh;
+    word-wrap   : normal;
+
+    align-items : center;
+}
+
+.heroText p{
+    margin : 0 auto;
+}
+
+.hero{
+    position        : relative;
+
+    min-height      : 80vh;
+
+    color           : #fff;
+    text-align      : center;
+
+    justify-content : center;
+}
+
+.hero .heroImg{
+    position         : absolute;
+    top              : 0;
+    left             : 0;
+    z-index          : -1;
+
+    height           : 100%;
+    width            : 100%;
+
+    background-image : url(../assets/img/hero-header.jpg);
+    background-size  : cover;
+}
+
+.hero .heroImg:after{
+    content  : '';
+
+    position : absolute;
+    top      : 0;
+    left     : 0;
+
+    height   : 100%;
+    width    : 100%;
+
+    opacity  : 0.8;
+}
+
+.hero h1{
+    font : bold 50px 'Lato', sans-serif;
+}
+
+.hero h3{
+    margin-bottom : 40px;
+    font          : normal 28px 'Lato', sans-serif;
+}
+
+.hero a.btn{
+    padding : 20px 46px;
+}
+
+/*--------------------
+    GALLERY Section
+--------------------*/
+#gallerySection{
+    display   : block;
+
+    overflow  : hidden;
+    max-width : 1024px;
+    margin    : 0 auto;
+}
+
+.contentTitle{
+    position    : relative;
+
+    margin      : 7vh 0 5vh 0;
+
+    font-style  : italic;
+    font-weight : lighter;
+    color       : #000;
+    text-align  : center;
+}
+
+.contentTitle:after{
+    content          : "";
+
+    position         : absolute;
+    right            : 0px;
+    bottom           : -5px;
+    left             : 0px;
+
+    height           : 1px;
+    width            : 11vh;
+    margin           : 0 auto;
+
+    background-color : #9e9e9e;
+}
+
+.contentSubtitle{
+    position    : relative;
+
+    margin      : 0 8vh 7vh;
+
+    font-style  : normal;
+    font-weight : lighter;
+    color       : #000;
+    text-align  : center;
+}
+
+.arrow{
+    position : fixed;
+    right    : 10px;
+    bottom   : 100px;
+
+    cursor   : pointer;
+    color    : #000
+}
+
+#arrowUp{
+    visibility : hidden;
+}
+
+.row {
+    display   : flex;
+
+    padding   : 0 5vh;
+
+    flex-wrap : wrap;
+}
+
+.column {
+    min-width : 100%;
+    padding   : 0 4px;
+
+    flex      : 100%;
+}
+
+.column img {
+    vertical-align : middle;
+
+    width          : 100%;
+    margin-top     : 8px;
+}
+
+/*--------------------
+    TESTIMONIAL Section
+--------------------*/
+.testimonials{
+    background-color : #fff;
+}
+
+.testimonials h5{
+    padding : 1vh 0 6vh 0;
+    color   : #b9b9b9;
+}
+
+.testimonials .quote{
+    width         : 80%;
+    margin-bottom : 20px;
+    padding       : 0;
+
+    font-size     : 22px;
+    font-weight   : 300;
+    line-height   : 1.5;
+    text-align    : center;
+}
+
+.testimonials .author{
+    margin-bottom : 50px;
+    font-size     : 18px;
+}
+
+.testimonials .author:last-child{
+    margin-bottom : 0;
+}
+
+/*-------------
+    FOOTER
+-------------*/
+footer{
+    display          : flex;
+
+    padding          : 60px 0;
+
+    background-color : #414a4f;
+    color            : #fff;
+    text-align       : right;
+
+    flex-direction   : column;
+    align-items      : flex-end;
+}
+
+footer ul{
+    display       : flex;
+
+    margin-bottom : 25px;
+
+    font-size     : 32px;
+}
+
+footer ul li{
+    margin : 0 8px;
+}
+
+footer ul li:first-child{
+    margin-left : 0;
+}
+
+footer ul li:last-child{
+    margin-right : 0;
+}
+
+footer p{
+    margin         : 0 15vh 0 0;
+
+    font-size      : 14px;
+    color          : rgba(255,255,255,0.6);
+    text-transform : uppercase;
+}
+
+footer p a{
+    color : #fff;
+}
+
+/*---------------
+    MEDIA QUERIES
+-----------------*/
+@media only screen and (min-width : 768px) {
+    .navBar__Items {
+        display     : flex;
+        align-items : center;
+        /*margin: 0 48vh;*/
+    }
+/*    .navBar nav li{
+        margin: 0.5vh 4vh 0 4vh;
+    }  */ 
+    .column {
+        min-width : 33%;
+        flex      : 33%;
+    }
+}
